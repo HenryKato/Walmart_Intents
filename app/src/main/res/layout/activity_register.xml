@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/etCaPsword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCaPsword"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaPsword"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCaEmail"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCaEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaEmail"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCaLname"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCaLname"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaLname"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Create your Account"
+        android:textColor="#3A52BC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:text="* required field"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvCaFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Firstname*"
+        app:layout_constraintStart_toStartOf="@+id/tvRequired"
+        app:layout_constraintTop_toBottomOf="@+id/tvRequired" />
+
+    <EditText
+        android:id="@+id/etCaFname"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCaFname"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaFname"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvCaLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Lastname*"
+        app:layout_constraintStart_toStartOf="@+id/etCaFname"
+        app:layout_constraintTop_toBottomOf="@+id/etCaFname" />
+
+    <TextView
+        android:id="@+id/tvCaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Email address*"
+        app:layout_constraintStart_toStartOf="@+id/etCaLname"
+        app:layout_constraintTop_toBottomOf="@+id/etCaLname" />
+
+    <TextView
+        android:id="@+id/tvCaPsword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Password*"
+        app:layout_constraintStart_toStartOf="@+id/etCaEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etCaEmail" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#3A52BC"
+        android:backgroundTint="#3F51B5"
+        android:capitalize="none"
+        android:text="Create Account"
+        android:onClick="createAccount"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCaPsword"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

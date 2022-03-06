@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCategoryActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivElectronics"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseElectronics"
+        android:src="@drawable/electronics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvElectronics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseElectronics"
+        android:text="Electronics"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivElectronics"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="@+id/ivElectronics"
+        app:layout_constraintTop_toBottomOf="@+id/ivElectronics"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/ivFood"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="44dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseFood"
+        android:src="@drawable/food"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBeauty"
+        app:layout_constraintStart_toEndOf="@+id/ivBeauty"
+        app:layout_constraintTop_toTopOf="@+id/ivBeauty"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvBeauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseBeauty"
+        android:text="Beauty"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivBeauty"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/ivBeauty"
+        app:layout_constraintTop_toBottomOf="@+id/ivBeauty"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvClothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseClothing"
+        android:text="Clothing"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvElectronics"
+        app:layout_constraintEnd_toEndOf="@+id/ivClothing"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/ivClothing"
+        app:layout_constraintTop_toTopOf="@+id/tvElectronics"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/ivBeauty"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseBeauty"
+        android:src="@drawable/beauty"
+        app:layout_constraintEnd_toEndOf="@+id/tvElectronics"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/tvElectronics"
+        app:layout_constraintTop_toBottomOf="@+id/tvElectronics"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseFood"
+        android:text="Food"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBeauty"
+        app:layout_constraintEnd_toEndOf="@+id/ivFood"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="@+id/ivFood"
+        app:layout_constraintTop_toTopOf="@+id/tvBeauty"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/ivClothing"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="76dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="chooseClothing"
+        android:src="@drawable/clothing"
+        app:layout_constraintBottom_toBottomOf="@+id/ivElectronics"
+        app:layout_constraintStart_toEndOf="@+id/ivElectronics"
+        app:layout_constraintTop_toTopOf="@+id/ivElectronics"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
