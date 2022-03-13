@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Walmart</string>
+    <string name="Shirts">Shirts with buttons and long sleeves</string>
+    <string name="Dresses">Elegant and cool for your dinner date</string>
+    <string name="Trousers">Smart and casual. Fits all occasions</string>
+    <string name="Jackets">Designer and winter jackets</string>
+    <string name="Tops">Casual and business for all you needs</string>
+    <string name="Jeans">Cool jeans</string>
+    <string name="Hoodies">Just for you to look classy</string>
+    <string name="Caps">Beat that sunshine while still looking cool</string>
 </resources>

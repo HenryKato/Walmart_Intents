@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_shopping_category.*
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Toast
 
 class ShoppingCategoryActivity : AppCompatActivity() {
@@ -17,8 +18,14 @@ class ShoppingCategoryActivity : AppCompatActivity() {
         tvWelcome.text = username
     }
 
+    fun displayCategoryProducts(category: String){
+            val intent = Intent(applicationContext, ListViewActivity::class.java)
+            startActivity(intent)
+    }
+
     fun chooseClothing(view: View){
-        Toast.makeText(this, "You have chosen the clothing category of shopping", Toast.LENGTH_LONG).show()
+        //Instead of making a toast, display the list view of products in this category
+        displayCategoryProducts("Clothing")
     }
 
     fun chooseElectronics(view: View){
