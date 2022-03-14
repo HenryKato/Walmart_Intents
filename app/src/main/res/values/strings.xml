@@ -7,5 +7,11 @@
     <string name="Tops">Casual and business for all you needs</string>
     <string name="Jeans">Cool jeans</string>
     <string name="Hoodies">Just for you to look classy</string>
-    <string name="Caps">Beat that sunshine while still looking cool</string>
+    <string name="Caps">Just for you to look classy under the sun</string>
+    <string name="DellPC">Cool PC with fast speed and wide screen at affordable price. Coming with a licensed version of Windows 7</string>
+    <string name="MacbookPC">Slim with M1 chip. Super fast performance and a great battery life. Comes in all sizes and fairly priced</string>
+    <string name="Iphone">Four cameras super elegant. Comes with ear pieces and 5 year warranty. Has a screen guard and great performance</string>
+    <string name="SamsungGalaxy">Wide screen, slim and super efficient</string>
+    <string name="Ipad">Beat that sunshine while still looking cool</string>
+    <string name="Headphones">Well equalised sound with base and calmness. Listen to every beat in your sound with these elegant headphones</string>
 </resources>

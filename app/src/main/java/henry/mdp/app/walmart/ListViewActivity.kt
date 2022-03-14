@@ -22,8 +22,7 @@ class ListViewActivity : AppCompatActivity() {
         lvItem.adapter = adapter
         lvItem.setOnItemClickListener{
             parent, view, position, id ->
-            Toast.makeText(this, "${productDetails[position]}", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "${applicationContext.getString(productDetails[position])}", Toast.LENGTH_LONG).show()
         }
     }
-
 }

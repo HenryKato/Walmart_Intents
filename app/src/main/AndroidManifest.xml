@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Walmart">
         <activity
+            android:name=".ElectronicsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElectronicsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListViewActivity"
             android:exported="false" />
         <activity

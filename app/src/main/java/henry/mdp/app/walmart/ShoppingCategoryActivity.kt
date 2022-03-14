@@ -29,7 +29,9 @@ class ShoppingCategoryActivity : AppCompatActivity() {
     }
 
     fun chooseElectronics(view: View){
-        Toast.makeText(this, "You have chosen the electronics category of shopping", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "You have chosen the electronics category of shopping", Toast.LENGTH_LONG).show()
+        var intent = Intent(this, ElectronicsActivity::class.java)
+        startActivity(intent)
     }
 
     fun chooseFood(view: View){
